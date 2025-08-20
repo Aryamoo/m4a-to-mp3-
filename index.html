@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f0f10">
+    <title>کافه لاکچری - تجربه‌ای مدرن از قهوه</title>
+
+    <!-- Performance hints -->
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+    <link rel="preconnect" href="https://source.unsplash.com" crossorigin>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles.css">
+    <noscript><style>.js-only{display:none !important}</style></noscript>
+</head>
+<body>
+    <a class="skip-link" href="#main">پرش به محتوا</a>
+
+    <header class="site-header" data-elevate-on-scroll>
+        <div class="container header-inner">
+            <a href="#" class="brand" aria-label="کافه لاکچری؛ بازگشت به خانه">
+                <span class="brand-mark" aria-hidden="true">☕</span>
+                <span class="brand-text">کافه لاکچری</span>
+            </a>
+            <button class="nav-toggle js-only" id="navToggle" aria-controls="siteNav" aria-expanded="false" aria-label="باز و بسته کردن منو">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </button>
+            <nav id="siteNav" class="site-nav" aria-label="ناوبری اصلی">
+                <ul>
+                    <li><a href="#home">خانه</a></li>
+                    <li><a href="#menu">منو</a></li>
+                    <li><a href="#about">درباره ما</a></li>
+                    <li><a href="#contact">تماس</a></li>
+                </ul>
+                <a class="cta" href="#reserve">رزرو میز</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+        <!-- Hero / Carousel -->
+        <section id="home" class="hero" aria-roledescription="carousel" aria-label="اسلایدر تصاویر قهوه">
+            <div class="carousel" data-autoplay="true" data-interval="5000">
+                <div class="slides" role="group" aria-live="off">
+                    <figure id="slide-1" class="slide is-active">
+                        <img src="https://source.unsplash.com/random/1600x900/?coffee,barista" alt="باریستا در حال آماده‌سازی قهوه" fetchpriority="high">
+                        <figcaption class="overlay">
+                            <h1>بهترین کافه دنیا</h1>
+                            <p>طعم بی‌نظیر قهوه در فضایی مدرن و لاکچری</p>
+                        </figcaption>
+                    </figure>
+                    <figure id="slide-2" class="slide">
+                        <img src="https://source.unsplash.com/random/1600x900/?coffee,espresso" alt="شات اسپرسو تازه" loading="lazy" fetchpriority="low">
+                        <figcaption class="overlay">
+                            <h2>اسپرسو اصیل</h2>
+                            <p>عطر قوی با کرمای طلایی</p>
+                        </figcaption>
+                    </figure>
+                    <figure id="slide-3" class="slide">
+                        <img src="https://source.unsplash.com/random/1600x900/?coffee,cafe" alt="فضای کافه لوکس" loading="lazy" fetchpriority="low">
+                        <figcaption class="overlay">
+                            <h2>فضای متفاوت</h2>
+                            <p>آرامش و انرژی در کنار هم</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="controls js-only">
+                    <button class="control prev" aria-label="اسلاید قبلی" data-dir="prev">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 6l-6 6 6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                    <button class="control next" aria-label="اسلاید بعدی" data-dir="next">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 6l6 6-6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                    </button>
+                </div>
+
+                <div class="indicators js-only" role="tablist" aria-label="نشانگر اسلایدها">
+                    <button role="tab" aria-selected="true" aria-controls="slide-1" tabindex="0"></button>
+                    <button role="tab" aria-selected="false" aria-controls="slide-2" tabindex="-1"></button>
+                    <button role="tab" aria-selected="false" aria-controls="slide-3" tabindex="-1"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="section container">
+            <header class="section-header">
+                <h2>منوی ویژه</h2>
+                <p>منتخب نوشیدنی‌های محبوب با کیفیت پریمیوم</p>
+            </header>
+
+            <div class="grid cards">
+                <article class="card">
+                    <picture>
+                        <img src="https://source.unsplash.com/random/600x400/?latte" alt="لاته طلایی" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                        <h3>لاته طلایی</h3>
+                        <p>طعم ملایم قهوه با شیر تازه و کرم ویژه</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="https://source.unsplash.com/random/600x400/?cappuccino" alt="کاپوچینو ایتالیایی" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                        <h3>کاپوچینو ایتالیایی</h3>
+                        <p>کلاسیک و خوش‌طعم با کف شیر نرم</p>
+                    </div>
+                </article>
+
+                <article class="card">
+                    <picture>
+                        <img src="https://source.unsplash.com/random/600x400/?mocha" alt="موکا شکلاتی" loading="lazy">
+                    </picture>
+                    <div class="card-body">
+                        <h3>موکا شکلاتی</h3>
+                        <p>ترکیب قهوه و شکلات برای لحظاتی خاص</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section id="about" class="section container">
+            <header class="section-header">
+                <h2>درباره ما</h2>
+                <p>تعهد به کیفیت، تجربه و حال خوب</p>
+            </header>
+            <p class="lede">ما در کافه لاکچری با بهترین دانه‌ها و تجهیزات حرفه‌ای، هر روز لحظه‌ای خوش‌طعم و به‌یادماندنی می‌سازیم. از شما دعوت می‌کنیم تفاوت را حس کنید.</p>
+        </section>
+
+        <!-- Contact / CTA -->
+        <section id="contact" class="section container cta-section">
+            <div class="cta-card">
+                <h3>برای رزرو میز آماده‌اید؟</h3>
+                <p>با چند کلیک ساده میز خود را رزرو کنید.</p>
+                <a id="reserve" class="cta large" href="#">رزرو سریع</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <p>© 2025 همه حقوق محفوظ است | طراحی شده برای کافه لاکچری</p>
+            <ul class="social">
+                <li><a href="#" aria-label="اینستاگرام">IG</a></li>
+                <li><a href="#" aria-label="تلگرام">TG</a></li>
+                <li><a href="#" aria-label="واتس‌اپ">WA</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="/script.js" defer></script>
+</body>
+</html>
+
